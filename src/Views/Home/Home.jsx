@@ -1,12 +1,13 @@
 import React from 'react';
-
+import Header_Carousel from '../../Components/Carousel/Header_Carousel';
 
 const Home = (props) => {
     return (
-        <div className='Homepage container' style={{marginTop: "100px"}}>
-           <p> HELLO FROM Home
-            1. Need Nice Hero section
-            2. short intro about website </p>
+        <div
+            className='Homepage'
+            style={{
+        }}>
+            <Header_Carousel/>
         </div>
     )
 }

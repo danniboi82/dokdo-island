@@ -6,7 +6,7 @@ class Dokdo_Navbar extends Component {
 
     render() {
         return (
-            <Navbar inverse collapseOnSelect fixedTop>
+            <Navbar inverse collapseOnSelect fixedTop style={{background: 'rgba(0, 0, 0, 0.4)', border:'none'}}>
                 <Navbar.Header>
                     <Navbar.Brand>
                         <a href="#brand">Dokdo Island</a>
