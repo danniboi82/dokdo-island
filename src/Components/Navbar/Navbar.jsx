@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Navbar, Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 import './Navbar.css';
 class Dokdo_Navbar extends Component {
     state = {
@@ -14,18 +15,18 @@ class Dokdo_Navbar extends Component {
         return (
             <Navbar inverse collapseOnSelect fixedTop className="Navbar" style={{}}>
                 <Navbar.Header>
-                    <Navbar.Brand onMouseEnter={this.hoverHandler}>
-                        <a className="Navbar-Brand"  href="#brand">Dokdo Island</a>
+                    <Navbar.Brand>
+                        <Link className="Navbar-Brand"  to="/" onMouseEnter={this.hoverHandler}>Dokdo Island</Link>
                     </Navbar.Brand>
                     <Navbar.Toggle/>
                 </Navbar.Header>
                 <Navbar.Collapse>
                     <Nav>
-                        <NavItem eventKey={1} href="#" className="Navbar-Links">
-                            About
+                        <NavItem eventKey={1} className="Navbar-Links">
+                            <Link to='/About'>About</Link>
                         </NavItem>
-                        <NavItem eventKey={2} href="#" className="Navbar-Links">
-                            History
+                        <NavItem eventKey={2} className="Navbar-Links">
+                            <Link to='/Image-Gallery'>Image Gallery</Link>
                         </NavItem>
                         <NavDropdown
                             eventKey={3}

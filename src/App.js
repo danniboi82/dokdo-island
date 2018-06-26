@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Dokdo_Navbar from './Components/Navbar/Navbar';
 import {BrowserRouter, Route, Switch, Link} from 'react-router-dom';
 import Home from './Views/Home/Home';
+import Image_Gallery from './Views/Image_Gallery/Image_Gallery';
 import "./App.css";
 
 class App extends Component {
@@ -10,8 +11,10 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
           <Dokdo_Navbar/>
-          <Home/>
-
+          <Switch>
+            <Route exact path='/' render={Home}/>
+            <Route path='/Image-Gallery' component={Image_Gallery}/>
+          </Switch>
         </div>
       </BrowserRouter>
     );
