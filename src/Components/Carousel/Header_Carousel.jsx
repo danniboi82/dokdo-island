@@ -39,7 +39,7 @@ class Header_Carousel extends Component {
                     <img className='Header-Image' alt="900x500" src={dokdo2}/>
                     <Fade top>
                         <Carousel.Caption className='Header-Content'>
-                            <h2 className='Header-Title'>What's the deal with Dokdo?? Japan's fallacious story and malicious act with Dokdo... 
+                            <h2 className='Header-Title'>Japan's fallacious story in claiming ownership since WW2...
                             </h2>
                             <p className='Header-Text'></p>
                         </Carousel.Caption>

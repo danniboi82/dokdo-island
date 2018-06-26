@@ -15,22 +15,3 @@
     font-size: 100px;
 }
 
-.dropdown-menu {
-    width: 177px;
-    background: rgba(0, 0, 0, 0.3);
-    font-size: 30px;
-}
-
-.dropdown-menu:hover {
-    width: 177px;
-    background: rgba(0, 0, 0, 0.3);
-}
-
-a#basic-nav-dropdown.dropdown-toggle {
-    background: rgba(0, 0, 0, 0.3);
-}
-
-.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
-    background: rgba(0, 0, 0, 0.3);
-    color: white;
-}

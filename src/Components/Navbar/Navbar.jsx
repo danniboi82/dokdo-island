@@ -1,41 +1,49 @@
 import React, {Component} from 'react';
 import {Navbar, Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap';
-
+import './Navbar.css';
 class Dokdo_Navbar extends Component {
-    state = {}
+    state = {
+        hover: false,
+    }
 
+
+    hoverHandler = (event) => {
+        console.log("event");
+    }
     render() {
         return (
-            <Navbar inverse collapseOnSelect fixedTop style={{background: 'rgba(0, 0, 0, 0.4)', border:'none'}}>
+            <Navbar inverse collapseOnSelect fixedTop className="Navbar" style={{}}>
                 <Navbar.Header>
-                    <Navbar.Brand>
-                        <a href="#brand">Dokdo Island</a>
+                    <Navbar.Brand onMouseEnter={this.hoverHandler}>
+                        <a className="Navbar-Brand"  href="#brand">Dokdo Island</a>
                     </Navbar.Brand>
                     <Navbar.Toggle/>
                 </Navbar.Header>
                 <Navbar.Collapse>
                     <Nav>
-                        <NavItem eventKey={1} href="#">
+                        <NavItem eventKey={1} href="#" className="Navbar-Links">
                             About
                         </NavItem>
-                        <NavItem eventKey={2} href="#">
+                        <NavItem eventKey={2} href="#" className="Navbar-Links">
                             History
                         </NavItem>
-                        <NavDropdown eventKey={3} title="Image Gallery" id="basic-nav-dropdown">
-                            <MenuItem eventKey={3.1}>Action</MenuItem>
-                            <MenuItem eventKey={3.2}></MenuItem>
-                            <MenuItem eventKey={3.3}></MenuItem>
+                        <NavDropdown
+                            eventKey={3}
+                            title="Image Gallery"
+                            id="basic-nav-dropdown"
+                            className="Navbar-Links">
+                            <MenuItem eventKey={3.1} className="Navbar-Links">Action</MenuItem>
+                            <MenuItem eventKey={3.2} className="Navbar-Links"></MenuItem>
+                            <MenuItem eventKey={3.3} className="Navbar-Links"></MenuItem>
                             <MenuItem divider/>
-                            <MenuItem eventKey={3.3}>Separated link</MenuItem>
+                            <MenuItem eventKey={3.3} className="Navbar-Links">Separated link</MenuItem>
                         </NavDropdown>
                     </Nav>
                     <Nav pullRight>
-                        <NavItem eventKey={1} href="#">
+                        <NavItem eventKey={1} href="#" className="Navbar-Links">
                             Sign-in
                         </NavItem>
-                        <NavItem eventKey={2} href="#">
-                            
-                        </NavItem>
+                        <NavItem eventKey={2} href="#" className="Navbar-Links"></NavItem>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
@@ -43,6 +51,5 @@ class Dokdo_Navbar extends Component {
         )
     }
 }
-
 
 export default Dokdo_Navbar;
