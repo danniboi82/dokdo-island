@@ -1,0 +1,14 @@
+.Image-Wrapper {
+    width: 300px;
+    height: 150px;
+    padding: 5%;
+    margin-top: 80px;
+}
+
+.Image-Wrapper img{
+    width: 100%;
+}
+
+.Image-Gallery-Section{
+    margin-top: 200px;
+}

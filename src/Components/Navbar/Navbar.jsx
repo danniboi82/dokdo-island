@@ -9,7 +9,7 @@ class Dokdo_Navbar extends Component {
 
 
     hoverHandler = (event) => {
-        console.log("event");
+       this.setState({ hover : true})
     }
     render() {
         return (
