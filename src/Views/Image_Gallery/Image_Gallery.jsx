@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Container} from 'react-bootstrap';
-
+import Image from 'react-bootstrap/lib/Image';
 import dokdo from '../../Images/000.jpg';
 import dokdo1 from '../../Images/dok.jpg';
 import dokdo2 from '../../Images/독도1.jpg';
@@ -17,35 +17,50 @@ import dokdo12 from '../../Images/nature_dokdo.jpg';
 import dokdo13 from '../../Images/nature_dokdo1.jpg';
 import dokdo14 from '../../Images/images.jpg';
 import './Image_Gallery.css';
+import '../../images.js';
 class Image_Gallery extends Component {
     render() {
+
+        let images = [
+            {
+                img: '../../Images/000.jpg',
+                title: "dokdo"
+            }, {
+                img: './Images/dok.jpg',
+                title: "dokdo0"
+            }, {
+                img: './Images/000.jpg',
+                title: "dokdo"
+            }, {
+                img: './Images/000.jpg',
+                title: "dokdo"
+            }, {
+                img: './Images/000.jpg',
+                title: "dokdo"
+            }, {
+                img: './Images/000.jpg',
+                title: "dokdo"
+            }, {
+                img: './Images/000.jpg',
+                title: "dokdo"
+            }, {
+                img: './Images/000.jpg',
+                title: "dokdo"
+            }, {
+                img: './Images/000.jpg',
+                title: "dokdo"
+            }, {
+                img: './Images/000.jpg',
+                title: "dokdo"
+            }
+        ];
+
+        let imgs = images.map(image => <div className='col-lg-3'><div className="Image-Wrapper"><img src={image.img} alt=''/></div></div>)
         return (
-            <div
-                className='container Image-Gallery-Section'
-                style={{
-                background: 'red'
-            }}>
+            <div className='container Image-Gallery-Section'>
+                <h1>Dokdo Island Image Gallery</h1>
                 <div className="row">
-                    <div className="col-lg-3">
-                        <div className="Image-Wrapper">
-                            <img src={dokdo} alt=""/>
-                        </div>
-                    </div>
-                    <div className="col-lg-3">
-                        <div className="Image-Wrapper">
-                            <img src={dokdo1} alt=""/>
-                        </div>
-                    </div>
-                    <div className="col-lg-3">
-                        <div className="Image-Wrapper">
-                            <img src={dokdo2} alt=""/>
-                        </div>
-                    </div>
-                    <div className="col-lg-3">
-                        <div className="Image-Wrapper">
-                            <img src={dokdo3} alt=""/>
-                        </div>
-                    </div>
+                    {imgs}
                 </div>
                 <div className="row my-5">
                     <div className="col-lg-3">
