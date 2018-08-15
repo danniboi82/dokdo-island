@@ -7,4 +7,14 @@ body {
 
 .nav-item{
   margin-right: 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  position: relative;
+  top: 20px;
+}
+
+.nav-item:hover {
+  text-decoration: none;
+  color: rgb(207, 67, 67);
 }

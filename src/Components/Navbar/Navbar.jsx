@@ -10,15 +10,13 @@ class Dokdo_Navbar extends Component {
             <div className="navbar navbar-expand-lg navbar-light bg-light">
                 <div className="container">
                     <Link to='/' className="navbar-brand">
-                        <img src={logo} alt="" width='250px'/>
+                        <img src={logo} alt="" width='170px'/>
                     </Link>
                     <div className="navbar-nav nav-menu ml-auto">
-                        <Link to='/' className="nav-item">History</Link>
-                        <Link to='/signup' className="nav-item">Image Gallery</Link>
-                        <Link to='/signin' className="nav-item">Sign-in</Link>
-
+                        <Link to='/Geography' className="nav-item">Geography</Link>
+                        <Link to='/History' className="nav-item">History</Link>
+                        <Link to='/Image-Gallery' className="nav-item">Image Gallery</Link>
                     </div>
-
                 </div>
             </div>
 
